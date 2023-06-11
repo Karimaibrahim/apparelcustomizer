@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World FabricJS</title>
+  <link href="style.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.min.js"></script>
+</head>
+<body>
+  <canvas
+    id="myCanvas"
+    width="600"
+    height="600">
+  </canvas>
+   <input type="file" id="imageInput" accept = "image/*" crossorigin="anonymous">
+   <input type="button" name="removeActiveImage" id="removeImage" value="Remove Selected Image" > 
+   <br>
+   <br>
+   <input type="textbox" name="TextBox" id="textBox">
+   <input type="button" name="addTextButton" id="addText" value="Add Text" >
+   <br>
+   <br>
+   <label>Font Size: </label>
+   <input type="number" name="fontSize" id="fontSize">
+
+  <label for="fontfamily">Choose a Font:</label>
+
+<select name="Fonts" id="fontfamily">
+  <option value="Helvetica">Helvetica</option>
+  <option value="PT Sans">PT Sans</option>
+  <option value="Calibri">Calibri</option>
+  <option value="Tahoma">Tahoma</option>
+  <option value="sans-serif">sans-serif</option>
+</select>
+
+
+   <br>
+   <br>
+   <label for="colorPicker">Font Color: </label>
+   <input type="color" name="pickcolor" id="colorPicker">
+   <br>
+   <label for="outlineThickness">Outline Thickness: </label>
+   <input type="range" name="setOutlineThickness" id="outlineThickness">
+   <label for="outlineColor">Font Outline Color: </label>
+   <input type="color" name="pickcolorForOutline" id="outlineColor">
+
+
+  
+  <script src="./lib/fabric.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
+</html>
